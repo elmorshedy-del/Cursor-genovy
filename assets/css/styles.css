@@ -96,6 +96,23 @@ img { max-width: 100%; display: block; }
   margin-bottom: 18px;
 }
 
+/* ---------------------------------------------------------- Featured live */
+.featured-head { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.15rem; margin-bottom: 14px; color: var(--danger); }
+.rec-dot, .live-empty-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--danger); box-shadow: 0 0 0 0 rgba(255,59,92,.6); animation: rec 1.6s infinite; }
+@keyframes rec { 0% { box-shadow: 0 0 0 0 rgba(255,59,92,.55); } 70% { box-shadow: 0 0 0 12px rgba(255,59,92,0); } 100% { box-shadow: 0 0 0 0 rgba(255,59,92,0); } }
+.featured-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.featured-card {
+  background: linear-gradient(135deg, rgba(123,47,247,.22), rgba(255,59,92,.12)), var(--surface);
+  border: 1px solid rgba(255,59,92,.4); border-radius: var(--radius); padding: 20px; transition: .2s;
+}
+.featured-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--danger); }
+.featured-league { color: var(--muted); font-size: .85rem; font-weight: 600; }
+.featured-teams { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 12px 0; font-weight: 700; font-size: 1.05rem; }
+.featured-score { font-size: 1.4rem; color: var(--gold); }
+.featured-foot { color: var(--text); font-size: .88rem; font-weight: 600; }
+.live-empty { display: flex; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 18px; color: var(--muted); font-weight: 600; }
+
 /* ---------------------------------------------------------------- Sections */
 .section { padding: 34px 0; }
 .section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 22px; }

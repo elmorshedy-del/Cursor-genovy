@@ -6,6 +6,37 @@
 
   const statusLabel = { live: "مباشر الآن", upcoming: "لم تبدأ", ended: "انتهت" };
 
+  /* -------------------------------------------------- Featured live (auto) */
+  // Automatically finds the match(es) currently live and surfaces them at the
+  // top of the page. "Live" is derived from the schedule data (status === "live").
+  function renderFeaturedLive() {
+    const wrap = document.getElementById("featured-live");
+    if (!wrap) return;
+    const live = MATCHES.filter((m) => m.status === "live");
+    if (!live.length) {
+      wrap.innerHTML = `
+        <div class="live-empty">
+          <span class="live-empty-dot"></span>
+          لا توجد مباريات مباشرة الآن — تابع المباريات القادمة بالأسفل.
+        </div>`;
+      return;
+    }
+    wrap.innerHTML = `
+      <div class="featured-head"><span class="rec-dot"></span> مباشر الآن</div>
+      <div class="featured-grid">
+        ${live.map((m) => `
+          <a class="featured-card" href="watch.html?ch=${m.channelId}&match=${m.id}">
+            <div class="featured-league">${m.league} · ${m.minute}</div>
+            <div class="featured-teams">
+              <span>${m.home}</span>
+              <b class="featured-score">${m.score}</b>
+              <span>${m.away}</span>
+            </div>
+            <div class="featured-foot">📺 ${m.channel} · ▶ شاهد الآن</div>
+          </a>`).join("")}
+      </div>`;
+  }
+
   /* -------------------------------------------------- Matches rendering */
   function matchCard(m) {
     const liveBtn = m.status === "ended"
@@ -89,6 +120,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    renderFeaturedLive();
     renderMatches("all");
     renderChannels();
     initFilters();

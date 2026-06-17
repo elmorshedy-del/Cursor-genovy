@@ -6,8 +6,16 @@
   const { CHANNELS, MATCHES } = window.SITE_DATA;
 
   const params = new URLSearchParams(location.search);
-  const chId = params.get("ch") || CHANNELS[0].id;
-  const matchId = params.get("match");
+
+  // Auto-pick the live match when none/“live” is requested, so opening the
+  // player with no channel lands you straight on whatever is live now.
+  const liveMatch = MATCHES.find((m) => m.status === "live");
+  const wantsAutoLive = !params.get("ch") || params.get("ch") === "live";
+
+  const chId = wantsAutoLive
+    ? (liveMatch ? liveMatch.channelId : CHANNELS[0].id)
+    : params.get("ch");
+  const matchId = params.get("match") || (wantsAutoLive && liveMatch ? liveMatch.id : null);
 
   const channel = CHANNELS.find((c) => c.id === chId) || CHANNELS[0];
   const match = MATCHES.find((m) => m.id === matchId);
