@@ -12,8 +12,10 @@
   const channel = CHANNELS.find((c) => c.id === chId) || CHANNELS[0];
   const match = MATCHES.find((m) => m.id === matchId);
 
+  const shell = document.getElementById("player-shell");
   const video = document.getElementById("video");
   const overlay = document.getElementById("overlay");
+  const isEmbed = !!channel.embed;
   let hls = null;
   let started = false;
 
@@ -35,6 +37,20 @@
     started = true;
     overlay.classList.add("hidden");
     video.play().catch(() => {/* user gesture may still be required */});
+  }
+
+  /* ---------------------------------------------- Embed (iframe) mode */
+  function embedUrl(serverIndex) {
+    const u = new URL(channel.embed.url);
+    if (channel.embed.param != null) u.searchParams.set(channel.embed.param, serverIndex);
+    return u.toString();
+  }
+
+  function loadEmbed(serverIndex) {
+    shell.innerHTML =
+      `<iframe class="embed-frame" src="${embedUrl(serverIndex)}" ` +
+      `allow="autoplay; encrypted-media; fullscreen" allowfullscreen ` +
+      `referrerpolicy="no-referrer" scrolling="no"></iframe>`;
   }
 
   /* ---------------------------------------------- Head info */
@@ -65,6 +81,22 @@
   /* ---------------------------------------------- Servers (quality mirrors) */
   function renderServers() {
     const row = document.getElementById("servers");
+
+    if (isEmbed) {
+      const n = channel.embed.servers || 1;
+      row.innerHTML = Array.from({ length: n }, (_, i) =>
+        `<button class="server-btn ${i === 0 ? "active" : ""}" data-srv="${i}">سيرفر ${i + 1}</button>`
+      ).join("");
+      row.querySelectorAll(".server-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          row.querySelectorAll(".server-btn").forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          loadEmbed(Number(btn.dataset.srv));
+        });
+      });
+      return;
+    }
+
     const servers = [
       { label: "سيرفر 1 · HD", url: channel.stream },
       { label: "سيرفر 2 · SD", url: channel.stream },
@@ -110,7 +142,11 @@
     renderServers();
     renderSidebar();
     initNav();
-    loadStream(channel.stream);
-    overlay.addEventListener("click", play);
+    if (isEmbed) {
+      loadEmbed(0); // iframe handles its own playback controls
+    } else {
+      loadStream(channel.stream);
+      overlay.addEventListener("click", play);
+    }
   });
 })();

@@ -15,7 +15,14 @@ const DEMO_STREAMS = {
 };
 
 const CHANNELS = [
-  { id: "bein-sports-1",       name: "beIN Sports 1",        group: "beIN",     quality: "1080p", stream: DEMO_STREAMS.bbb,   badge: "HD" },
+  // `embed` (optional): when present, the watch page loads this external player
+  // in an <iframe> instead of the built-in HLS player. `servers` builds the
+  // server-switch buttons by changing the `?<param>=<index>` query value.
+  // NOTE: external players may carry their own ads and may refuse to load if
+  // they block cross-site framing (X-Frame-Options / CSP). Native HLS via
+  // `stream` stays ad-free and under your control.
+  { id: "bein-sports-1",       name: "beIN Sports 1",        group: "beIN",     quality: "1080p", stream: DEMO_STREAMS.bbb,   badge: "HD",
+    embed: { url: "https://vip.worldkoora.com/albaplayer/vip1/", param: "serv", servers: 3 } },
   { id: "bein-sports-2",       name: "beIN Sports 2",        group: "beIN",     quality: "1080p", stream: DEMO_STREAMS.tears, badge: "HD" },
   { id: "bein-sports-3",       name: "beIN Sports 3",        group: "beIN",     quality: "1080p", stream: DEMO_STREAMS.apple, badge: "HD" },
   { id: "bein-sports-4",       name: "beIN Sports 4",        group: "beIN",     quality: "720p",  stream: DEMO_STREAMS.bbb },
