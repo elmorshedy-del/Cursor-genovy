@@ -36,6 +36,9 @@ const CHANNELS = [
   { id: "dubai-sports-1",      name: "Dubai Sports 1",       group: "Dubai",    quality: "720p",  stream: DEMO_STREAMS.apple },
 ];
 
+// FALLBACK sample matches — only shown if assets/data/today.json can't be
+// loaded (e.g. opened via file://). Real fixtures come from getMatches() below,
+// refreshed by scripts/fetch-matches.js + the GitHub Action.
 // status: "live" | "upcoming" | "ended"
 const MATCHES = [
   {
@@ -90,3 +93,22 @@ const MATCHES = [
 
 // Expose for non-module scripts.
 window.SITE_DATA = { CHANNELS, MATCHES };
+
+/* ---------------------------------------------------------------------------
+ * getMatches(): returns REAL fixtures from assets/data/today.json (refreshed by
+ * the GitHub Action / scripts/fetch-matches.js). Falls back to the sample
+ * MATCHES above only if the live file can't be loaded (e.g. opened via file://).
+ * ------------------------------------------------------------------------- */
+window.getMatches = async function getMatches() {
+  try {
+    const res = await fetch("assets/data/today.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    if (Array.isArray(data.matches) && data.matches.length) {
+      return { matches: data.matches, updatedAt: data.updatedAt, live: true };
+    }
+    return { matches: [], updatedAt: data.updatedAt, live: true };
+  } catch (e) {
+    return { matches: MATCHES, updatedAt: null, live: false };
+  }
+};

@@ -1,14 +1,33 @@
 /* ============================================================================
  * app.js — renders the home page (matches + channels) and handles UI.
+ * Match data is loaded live from assets/data/today.json via window.getMatches().
  * ==========================================================================*/
 (function () {
-  const { CHANNELS, MATCHES } = window.SITE_DATA;
+  const { CHANNELS } = window.SITE_DATA;
+  let MATCHES = [];
 
   const statusLabel = { live: "مباشر الآن", upcoming: "لم تبدأ", ended: "انتهت" };
 
+  function crest(badge, ab) {
+    return badge
+      ? `<div class="crest"><img src="${badge}" alt="" loading="lazy"></div>`
+      : `<div class="crest">${ab || "?"}</div>`;
+  }
+
+  // Where a match's watch button points. Real fixtures have no channel mapping,
+  // so they open the auto-live player; sample data keeps its channel link.
+  function watchHref(m) {
+    return m.channelId
+      ? `watch.html?ch=${m.channelId}&match=${m.id}`
+      : `watch.html?ch=live&match=${m.id}`;
+  }
+
+  function footMeta(m) {
+    if (m.channel) return `📺 <b>${m.channel}</b>${m.commentator ? ` · 🎙️ ${m.commentator}` : ""}`;
+    return m.venue ? `🏟️ ${m.venue}` : `🏆 ${m.league}`;
+  }
+
   /* -------------------------------------------------- Featured live (auto) */
-  // Automatically finds the match(es) currently live and surfaces them at the
-  // top of the page. "Live" is derived from the schedule data (status === "live").
   function renderFeaturedLive() {
     const wrap = document.getElementById("featured-live");
     if (!wrap) return;
@@ -17,7 +36,7 @@
       wrap.innerHTML = `
         <div class="live-empty">
           <span class="live-empty-dot"></span>
-          لا توجد مباريات مباشرة الآن — تابع المباريات القادمة بالأسفل.
+          لا توجد مباريات مباشرة الآن — تابع مباريات اليوم بالأسفل.
         </div>`;
       return;
     }
@@ -25,14 +44,14 @@
       <div class="featured-head"><span class="rec-dot"></span> مباشر الآن</div>
       <div class="featured-grid">
         ${live.map((m) => `
-          <a class="featured-card" href="watch.html?ch=${m.channelId}&match=${m.id}">
-            <div class="featured-league">${m.league} · ${m.minute}</div>
+          <a class="featured-card" href="${watchHref(m)}">
+            <div class="featured-league">${m.league}${m.minute ? ` · ${m.minute}` : ""}</div>
             <div class="featured-teams">
               <span>${m.home}</span>
               <b class="featured-score">${m.score}</b>
               <span>${m.away}</span>
             </div>
-            <div class="featured-foot">📺 ${m.channel} · ▶ شاهد الآن</div>
+            <div class="featured-foot">▶ شاهد الآن</div>
           </a>`).join("")}
       </div>`;
   }
@@ -41,8 +60,8 @@
   function matchCard(m) {
     const liveBtn = m.status === "ended"
       ? `<span class="watch-link" style="background:var(--surface-2);color:var(--muted)">انتهت</span>`
-      : `<a class="watch-link" href="watch.html?ch=${m.channelId}&match=${m.id}">▶ مشاهدة</a>`;
-    const minute = m.status === "live" ? ` · ${m.minute}` : "";
+      : `<a class="watch-link" href="${watchHref(m)}">▶ مشاهدة</a>`;
+    const minute = m.status === "live" && m.minute ? ` · ${m.minute}` : "";
     return `
       <article class="match-card" data-status="${m.status}">
         <div class="match-top">
@@ -51,17 +70,17 @@
         </div>
         <div class="teams">
           <div class="team">
-            <div class="crest">${m.homeAbbr}</div>
+            ${crest(m.homeBadge, m.homeAbbr)}
             <div class="tname">${m.home}</div>
           </div>
           <div class="score">${m.score}<small>${m.time}</small></div>
           <div class="team">
-            <div class="crest">${m.awayAbbr}</div>
+            ${crest(m.awayBadge, m.awayAbbr)}
             <div class="tname">${m.away}</div>
           </div>
         </div>
         <div class="match-foot">
-          <span class="match-meta">📺 <b>${m.channel}</b> · 🎙️ ${m.commentator}</span>
+          <span class="match-meta">${footMeta(m)}</span>
           ${liveBtn}
         </div>
       </article>`;
@@ -82,10 +101,8 @@
 
   /* -------------------------------------------------- Channels rendering */
   function channelCard(c) {
-    const isLive = MATCHES.some((m) => m.channelId === c.id && m.status === "live");
     return `
       <a class="channel-card" href="watch.html?ch=${c.id}">
-        ${isLive ? `<span class="live-dot">● مباشر</span>` : ""}
         ${c.badge ? `<span class="badge">${c.badge}</span>` : ""}
         <div class="logo-box">📡</div>
         <div class="cname">${c.name}</div>
@@ -119,11 +136,25 @@
     if (toggle && links) toggle.addEventListener("click", () => links.classList.toggle("open"));
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    renderFeaturedLive();
-    renderMatches("all");
+  function showUpdated(meta) {
+    const el = document.getElementById("updated-at");
+    if (!el) return;
+    if (meta.live && meta.updatedAt) {
+      const d = new Date(meta.updatedAt);
+      el.textContent = `مباريات حقيقية · آخر تحديث ${d.toLocaleString("ar")}`;
+    } else {
+      el.textContent = "بيانات تجريبية (تعذّر تحميل الجدول المباشر)";
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", async () => {
     renderChannels();
     initFilters();
     initNav();
+    const meta = await window.getMatches();
+    MATCHES = meta.matches;
+    showUpdated(meta);
+    renderFeaturedLive();
+    renderMatches("all");
   });
 })();

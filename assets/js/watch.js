@@ -1,29 +1,20 @@
 /* ============================================================================
  * watch.js — watch page: HLS player + server switching + sidebar.
  * Uses hls.js for browsers without native HLS, native playback on Safari/iOS.
+ * Match data is loaded live via window.getMatches() (assets/data/today.json).
  * ==========================================================================*/
 (function () {
-  const { CHANNELS, MATCHES } = window.SITE_DATA;
-
+  const { CHANNELS } = window.SITE_DATA;
   const params = new URLSearchParams(location.search);
 
-  // Auto-pick the live match when none/“live” is requested, so opening the
-  // player with no channel lands you straight on whatever is live now.
-  const liveMatch = MATCHES.find((m) => m.status === "live");
-  const wantsAutoLive = !params.get("ch") || params.get("ch") === "live";
-
-  const chId = wantsAutoLive
-    ? (liveMatch ? liveMatch.channelId : CHANNELS[0].id)
-    : params.get("ch");
-  const matchId = params.get("match") || (wantsAutoLive && liveMatch ? liveMatch.id : null);
-
-  const channel = CHANNELS.find((c) => c.id === chId) || CHANNELS[0];
-  const match = MATCHES.find((m) => m.id === matchId);
+  let MATCHES = [];
+  let channel = CHANNELS[0];
+  let match = null;
+  let isEmbed = false;
 
   const shell = document.getElementById("player-shell");
   const video = document.getElementById("video");
   const overlay = document.getElementById("overlay");
-  const isEmbed = !!channel.embed;
   let hls = null;
   let started = false;
 
@@ -63,7 +54,7 @@
 
   /* ---------------------------------------------- Head info */
   function fillInfo() {
-    const live = MATCHES.some((m) => m.channelId === channel.id && m.status === "live");
+    const live = !!(match && match.status === "live");
     document.getElementById("ch-name").textContent = channel.name;
     document.getElementById("ch-status").innerHTML = live
       ? `<span class="status-pill status-live">مباشر الآن</span>`
@@ -77,8 +68,8 @@
 
     document.getElementById("info-quality").textContent = channel.quality;
     document.getElementById("info-group").textContent = channel.group;
-    document.getElementById("info-commentator").textContent = match ? match.commentator : "—";
-    document.getElementById("info-league").textContent = match ? match.league : "—";
+    document.getElementById("info-commentator").textContent = (match && match.commentator) || "—";
+    document.getElementById("info-league").textContent = (match && match.league) || "—";
 
     document.getElementById("overlay-title").textContent = channel.name;
     document.getElementById("overlay-sub").textContent = match
@@ -126,17 +117,15 @@
   /* ---------------------------------------------- Sidebar */
   function renderSidebar() {
     const panel = document.getElementById("side-channels");
-    panel.innerHTML = CHANNELS.map((c) => {
-      const live = MATCHES.some((m) => m.channelId === c.id && m.status === "live");
-      return `
-        <a class="side-channel ${c.id === channel.id ? "active" : ""}" href="watch.html?ch=${c.id}">
-          <div class="mini-logo">📡</div>
-          <div class="meta">
-            <div class="n">${c.name} ${live ? "🔴" : ""}</div>
-            <div class="q">${c.quality} · ${c.group}</div>
-          </div>
-        </a>`;
-    }).join("");
+    panel.innerHTML = CHANNELS.map((c) =>
+      `<a class="side-channel ${c.id === channel.id ? "active" : ""}" href="watch.html?ch=${c.id}">
+         <div class="mini-logo">📡</div>
+         <div class="meta">
+           <div class="n">${c.name}</div>
+           <div class="q">${c.quality} · ${c.group}</div>
+         </div>
+       </a>`
+    ).join("");
   }
 
   function initNav() {
@@ -145,11 +134,30 @@
     if (toggle && links) toggle.addEventListener("click", () => links.classList.toggle("open"));
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
+  function resolveSelection() {
+    // Auto-pick the live match when none / "live" is requested.
+    const liveMatch = MATCHES.find((m) => m.status === "live");
+    const reqCh = params.get("ch");
+    const wantsAutoLive = !reqCh || reqCh === "live";
+
+    const chId = wantsAutoLive
+      ? (liveMatch && liveMatch.channelId ? liveMatch.channelId : CHANNELS[0].id)
+      : reqCh;
+    const matchId = params.get("match") || (wantsAutoLive && liveMatch ? liveMatch.id : null);
+
+    channel = CHANNELS.find((c) => c.id === chId) || CHANNELS[0];
+    match = MATCHES.find((m) => m.id === matchId) || null;
+    isEmbed = !!channel.embed;
+  }
+
+  document.addEventListener("DOMContentLoaded", async () => {
+    initNav();
+    const meta = await window.getMatches();
+    MATCHES = meta.matches;
+    resolveSelection();
     fillInfo();
     renderServers();
     renderSidebar();
-    initNav();
     if (isEmbed) {
       loadEmbed(0); // iframe handles its own playback controls
     } else {
