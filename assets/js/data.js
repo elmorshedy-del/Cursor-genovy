@@ -15,14 +15,7 @@ const DEMO_STREAMS = {
 };
 
 const CHANNELS = [
-  // `embed` (optional): when present, the watch page loads this external player
-  // in an <iframe> instead of the built-in HLS player. `servers` builds the
-  // server-switch buttons by changing the `?<param>=<index>` query value.
-  // NOTE: external players may carry their own ads and may refuse to load if
-  // they block cross-site framing (X-Frame-Options / CSP). Native HLS via
-  // `stream` stays ad-free and under your control.
-  { id: "bein-sports-1",       name: "beIN Sports 1",        group: "beIN",     quality: "1080p", stream: DEMO_STREAMS.bbb,   badge: "HD",
-    embed: { url: "https://vip.worldkoora.com/albaplayer/vip1/", param: "serv", servers: 3 } },
+  { id: "bein-sports-1",       name: "beIN Sports 1",        group: "beIN",     quality: "1080p", stream: DEMO_STREAMS.bbb,   badge: "HD" },
   { id: "bein-sports-2",       name: "beIN Sports 2",        group: "beIN",     quality: "1080p", stream: DEMO_STREAMS.tears, badge: "HD" },
   { id: "bein-sports-3",       name: "beIN Sports 3",        group: "beIN",     quality: "1080p", stream: DEMO_STREAMS.apple, badge: "HD" },
   { id: "bein-sports-4",       name: "beIN Sports 4",        group: "beIN",     quality: "720p",  stream: DEMO_STREAMS.bbb },
@@ -34,6 +27,12 @@ const CHANNELS = [
   { id: "ssc-2",               name: "SSC 2",                group: "SSC",      quality: "1080p", stream: DEMO_STREAMS.bbb },
   { id: "ad-sports-1",         name: "AD Sports 1",          group: "AD",       quality: "1080p", stream: DEMO_STREAMS.tears },
   { id: "dubai-sports-1",      name: "Dubai Sports 1",       group: "Dubai",    quality: "720p",  stream: DEMO_STREAMS.apple },
+
+  // OPT-IN external embed (worldkoora albaplayer). Kept as its own channel so
+  // it never breaks the default player. It may show its own ads or load blank
+  // if the host blocks cross-site framing — that's outside our control.
+  { id: "worldkoora-vip1",     name: "beIN 1 · سيرفر خارجي",  group: "External", quality: "auto",
+    embed: { url: "https://vip.worldkoora.com/albaplayer/vip1/", param: "serv", servers: 3 } },
 ];
 
 // FALLBACK sample matches — only shown if assets/data/today.json can't be
@@ -99,16 +98,30 @@ window.SITE_DATA = { CHANNELS, MATCHES };
  * the GitHub Action / scripts/fetch-matches.js). Falls back to the sample
  * MATCHES above only if the live file can't be loaded (e.g. opened via file://).
  * ------------------------------------------------------------------------- */
+// Corrects a snapshot's status against the wall clock, so a match flips to
+// live/ended on schedule even if today.json hasn't been refreshed recently.
+// Kickoff time in today.json is UTC (HH:MM). A typical match window ~135 min.
+const MATCH_WINDOW_MS = 135 * 60 * 1000;
+function refineStatus(m, dateStr) {
+  if (m.status === "ended") return "ended";              // trust a finished result
+  if (!dateStr || !m.time || !/^\d{2}:\d{2}$/.test(m.time)) return m.status;
+  const kickoff = Date.parse(`${dateStr}T${m.time}:00Z`);
+  if (isNaN(kickoff)) return m.status;
+  const elapsed = Date.now() - kickoff;
+  if (elapsed < 0) return "upcoming";
+  if (elapsed < MATCH_WINDOW_MS) return "live";
+  return "ended";
+}
+
 window.getMatches = async function getMatches() {
   try {
     const res = await fetch("assets/data/today.json", { cache: "no-store" });
     if (!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
-    if (Array.isArray(data.matches) && data.matches.length) {
-      return { matches: data.matches, updatedAt: data.updatedAt, live: true };
-    }
-    return { matches: [], updatedAt: data.updatedAt, live: true };
+    const raw = Array.isArray(data.matches) ? data.matches : [];
+    const matches = raw.map((m) => ({ ...m, status: refineStatus(m, data.date) }));
+    return { matches, updatedAt: data.updatedAt, date: data.date, live: true };
   } catch (e) {
-    return { matches: MATCHES, updatedAt: null, live: false };
+    return { matches: MATCHES, updatedAt: null, date: null, live: false };
   }
 };

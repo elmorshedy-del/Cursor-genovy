@@ -1,18 +1,18 @@
 {
   "date": "2026-06-19",
-  "updatedAt": "2026-06-19T19:22:59.555Z",
+  "updatedAt": "2026-06-19T19:30:28.744Z",
   "matches": [
     {
       "id": "e2391750",
-      "status": "upcoming",
-      "minute": "",
+      "status": "live",
+      "minute": "1H",
       "home": "USA",
       "away": "Australia",
       "homeAbbr": "U",
       "awayAbbr": "A",
       "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/21f0oi1597948195.png",
       "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/lark6k1661780848.png",
-      "score": "VS",
+      "score": "1 - 0",
       "time": "19:00",
       "league": "FIFA World Cup",
       "venue": "Lumen Field · Seattle, WA",
