@@ -23,8 +23,11 @@
   }
 
   function footMeta(m) {
-    if (m.channel) return `📺 <b>${m.channel}</b>${m.commentator ? ` · 🎙️ ${m.commentator}` : ""}`;
-    return m.venue ? `🏟️ ${m.venue}` : `🏆 ${m.league}`;
+    const parts = [];
+    if (m.channel) parts.push(`📺 <b>${m.channel}</b>`);
+    if (m.commentator) parts.push(`🎙️ ${m.commentator}`);
+    if (!parts.length) parts.push(m.venue ? `🏟️ ${m.venue}` : `🏆 ${m.league}`);
+    return parts.join(" · ");
   }
 
   /* -------------------------------------------------- Featured live (auto) */
