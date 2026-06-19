@@ -27,6 +27,7 @@
   <div class="row" id="servers"></div>
   <div class="row">
     <label><input type="checkbox" id="ref" checked /> إخفاء المُحيل (referrerpolicy=no-referrer)</label>
+    <label><input type="checkbox" id="sbx" checked /> 🛡️ حظر النوافذ المنبثقة (sandbox)</label>
   </div>
 
   <div class="frame-box"><iframe id="f" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
@@ -52,9 +53,13 @@
       u.searchParams.set(PARAM, i);
       return u.toString();
     }
+    const sbx = document.getElementById("sbx");
     function load(i) {
       active = i;
       f.referrerPolicy = ref.checked ? "no-referrer" : "strict-origin-when-cross-origin";
+      // Blocks pop-ups/redirects while keeping the player scripts alive.
+      if (sbx.checked) f.setAttribute("sandbox", "allow-scripts allow-same-origin allow-forms allow-presentation");
+      else f.removeAttribute("sandbox");
       const src = url(i);
       f.src = src;
       cur.textContent = src;
@@ -67,6 +72,7 @@
       serversEl.appendChild(b);
     }
     ref.onchange = () => load(active);
+    sbx.onchange = () => load(active);
     f.addEventListener("load", () => {
       document.getElementById("status").textContent =
         "✅ تم تحميل إطار المشغّل. إن لم يبدأ الفيديو اضغط داخل المشغّل (التشغيل التلقائي قد يكون محظوراً).";

@@ -46,8 +46,13 @@
   }
 
   function loadEmbed(serverIndex) {
+    // sandbox WITHOUT allow-popups / allow-top-navigation blocks the pop-ups,
+    // pop-unders and tap-to-redirect ads the external player tries to open,
+    // while allow-scripts keeps the video player itself working.
+    // (In-frame overlay/banner ads can't be removed — cross-origin.)
     shell.innerHTML =
       `<iframe class="embed-frame" src="${embedUrl(serverIndex)}" ` +
+      `sandbox="allow-scripts allow-same-origin allow-forms allow-presentation" ` +
       `allow="autoplay; encrypted-media; fullscreen" allowfullscreen ` +
       `referrerpolicy="no-referrer" scrolling="no"></iframe>`;
   }
