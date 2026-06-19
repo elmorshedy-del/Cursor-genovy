@@ -36,9 +36,9 @@
 
   <script>
     // Edit this to point at any embedded player URL you want to test.
-    const BASE = "https://vip.worldkoora.com/albaplayer/vip1/";
-    const PARAM = "serv";
-    const SERVERS = 3;
+    const BASE = "https://dsfsdfsdf654sdf654sd65fs5df.blogspot.com/p/bein1.html";
+    const PARAM = "";   // empty = single fixed page (no ?serv= query)
+    const SERVERS = 1;
 
     const f = document.getElementById("f");
     const cur = document.getElementById("cur");
@@ -47,6 +47,7 @@
     let active = 0;
 
     function url(i) {
+      if (!PARAM) return BASE;
       const u = new URL(BASE);
       u.searchParams.set(PARAM, i);
       return u.toString();
