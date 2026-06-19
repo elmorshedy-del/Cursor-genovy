@@ -15,7 +15,9 @@ const DEMO_STREAMS = {
 };
 
 const CHANNELS = [
-  { id: "bein-sports-1",       name: "beIN Sports 1",        group: "beIN",     quality: "1080p", stream: DEMO_STREAMS.bbb,   badge: "HD" },
+  // Embed channel — reproduces the known-good commit 9878075 exactly.
+  { id: "bein-sports-1",       name: "beIN Sports 1",        group: "beIN",     quality: "1080p", stream: DEMO_STREAMS.bbb,   badge: "HD",
+    embed: { url: "https://vip.worldkoora.com/albaplayer/vip1/", param: "serv", servers: 3 } },
   { id: "bein-sports-2",       name: "beIN Sports 2",        group: "beIN",     quality: "1080p", stream: DEMO_STREAMS.tears, badge: "HD" },
   { id: "bein-sports-3",       name: "beIN Sports 3",        group: "beIN",     quality: "1080p", stream: DEMO_STREAMS.apple, badge: "HD" },
   { id: "bein-sports-4",       name: "beIN Sports 4",        group: "beIN",     quality: "720p",  stream: DEMO_STREAMS.bbb },
