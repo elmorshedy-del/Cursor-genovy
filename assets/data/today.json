@@ -1,6 +1,6 @@
 {
   "date": "2026-06-19",
-  "updatedAt": "2026-06-19T19:30:28.744Z",
+  "updatedAt": "2026-06-19T20:19:27.049Z",
   "matches": [
     {
       "id": "e2391750",
@@ -17,7 +17,7 @@
       "league": "FIFA World Cup",
       "venue": "Lumen Field · Seattle, WA",
       "channel": null,
-      "channelId": null,
+      "channelId": "bein-sports-1",
       "commentator": null
     },
     {
@@ -35,7 +35,7 @@
       "league": "FIFA World Cup",
       "venue": "Gillette Stadium · Foxborough, MA",
       "channel": null,
-      "channelId": null,
+      "channelId": "bein-sports-1",
       "commentator": null
     },
     {
@@ -53,7 +53,7 @@
       "league": "FIFA World Cup",
       "venue": "Estadio Akron · Zapopan, JA",
       "channel": null,
-      "channelId": null,
+      "channelId": "bein-sports-1",
       "commentator": null
     }
   ]

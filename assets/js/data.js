@@ -29,13 +29,6 @@ const CHANNELS = [
   { id: "ssc-2",               name: "SSC 2",                group: "SSC",      quality: "1080p", stream: DEMO_STREAMS.bbb },
   { id: "ad-sports-1",         name: "AD Sports 1",          group: "AD",       quality: "1080p", stream: DEMO_STREAMS.tears },
   { id: "dubai-sports-1",      name: "Dubai Sports 1",       group: "Dubai",    quality: "720p",  stream: DEMO_STREAMS.apple },
-
-  // OPT-IN external embed. Kept as its own channel so it never breaks the
-  // default player. It may show its own ads or load blank if the host blocks
-  // cross-site framing — that's outside our control. Single fixed page (no
-  // server param), so `servers` is omitted.
-  { id: "bein1-embed",         name: "beIN Sports 1 · مباشر",  group: "External", quality: "auto",
-    embed: { url: "https://dsfsdfsdf654sdf654sd65fs5df.blogspot.com/p/bein1.html" } },
 ];
 
 // FALLBACK sample matches — only shown if assets/data/today.json can't be

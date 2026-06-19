@@ -74,9 +74,9 @@ function statusOf(s) {
       time,
       league: e.strLeague || "مباراة",
       venue: [e.strVenue, e.strCity].filter(Boolean).join(" · "),
-      channel: null,        // real broadcaster unknown via this feed; configure your own
-      channelId: null,
-      commentator: null,
+      channel: null,                 // real broadcaster unknown via this feed
+      channelId: "bein-sports-1",    // route the watch button to the embed player
+      commentator: null,             // no neutral source publishes beIN commentators
     };
   });
 
