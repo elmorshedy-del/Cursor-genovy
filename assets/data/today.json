@@ -1,18 +1,18 @@
 {
   "date": "2026-08-02",
-  "updatedAt": "2026-08-02T10:02:31.042Z",
+  "updatedAt": "2026-08-02T13:40:46.819Z",
   "matches": [
     {
       "id": "e2397237",
-      "status": "live",
-      "minute": "1H",
+      "status": "upcoming",
+      "minute": "",
       "home": "Birmingham Legion",
       "away": "Rhode Island FC",
       "homeAbbr": "BL",
       "awayAbbr": "RIF",
       "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/8uw1mc1629299635.png",
       "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/bswh0q1700305340.png",
-      "score": "0 - 0",
+      "score": "VS",
       "time": "23:00",
       "league": "American USL Championship",
       "venue": "Protective Stadium",
