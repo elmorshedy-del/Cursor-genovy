@@ -1,18 +1,18 @@
 {
   "date": "2026-08-03",
-  "updatedAt": "2026-08-03T17:56:32.580Z",
+  "updatedAt": "2026-08-03T21:10:32.713Z",
   "matches": [
     {
       "id": "e2397994",
-      "status": "upcoming",
-      "minute": "",
+      "status": "live",
+      "minute": "HT",
       "home": "Sarmiento",
       "away": "Independiente Rivadavia",
       "homeAbbr": "S",
       "awayAbbr": "IR",
       "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/xxofu71677634191.png",
       "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/qgzi2b1769406125.png",
-      "score": "VS",
+      "score": "2 - 1",
       "time": "19:45",
       "league": "Argentinian Primera Division",
       "venue": "Estadio Eva Perón de Junín",
