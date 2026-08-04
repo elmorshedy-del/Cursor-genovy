@@ -1,25 +1,7 @@
 {
   "date": "2026-08-04",
-  "updatedAt": "2026-08-04T17:53:59.828Z",
+  "updatedAt": "2026-08-04T21:17:30.041Z",
   "matches": [
-    {
-      "id": "e2408493",
-      "status": "upcoming",
-      "minute": "",
-      "home": "CA Atlas",
-      "away": "Sacachispas",
-      "homeAbbr": "CA",
-      "awayAbbr": "S",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/i2jpqv1734118211.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/nx840e1652125601.png",
-      "score": "VS",
-      "time": "18:00",
-      "league": "Argentinian Primera C",
-      "venue": "Estadio Ricardo Puga",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2397983",
       "status": "ended",
@@ -52,6 +34,24 @@
       "time": "00:15",
       "league": "Argentinian Primera Division",
       "venue": "Estadio Tomás Adolfo Ducó",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2408493",
+      "status": "ended",
+      "minute": "",
+      "home": "CA Atlas",
+      "away": "Sacachispas",
+      "homeAbbr": "CA",
+      "awayAbbr": "S",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/i2jpqv1734118211.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/nx840e1652125601.png",
+      "score": "0 - 2",
+      "time": "18:00",
+      "league": "Argentinian Primera C",
+      "venue": "Estadio Ricardo Puga",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
