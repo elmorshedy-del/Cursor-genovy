@@ -1,11 +1,11 @@
 {
   "date": "2026-08-06",
-  "updatedAt": "2026-08-06T03:14:34.391Z",
+  "updatedAt": "2026-08-06T06:36:12.632Z",
   "matches": [
     {
       "id": "e2397197",
-      "status": "live",
-      "minute": "2H",
+      "status": "ended",
+      "minute": "",
       "home": "FC Tulsa",
       "away": "Sacramento Republic",
       "homeAbbr": "FT",
@@ -22,8 +22,8 @@
     },
     {
       "id": "e2397249",
-      "status": "live",
-      "minute": "2H",
+      "status": "ended",
+      "minute": "",
       "home": "El Paso Locomotive",
       "away": "Monterey Bay FC",
       "homeAbbr": "EPL",
@@ -40,7 +40,7 @@
     },
     {
       "id": "e2397250",
-      "status": "upcoming",
+      "status": "ended",
       "minute": "",
       "home": "Las Vegas Lights",
       "away": "Oakland Roots",
@@ -48,7 +48,7 @@
       "awayAbbr": "OR",
       "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/wr69xv1629387151.png",
       "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/vzzkkj1616767958.png",
-      "score": "VS",
+      "score": "0 - 0",
       "time": "02:30",
       "league": "American USL Championship",
       "venue": "Cashman Field",
