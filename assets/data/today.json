@@ -1,25 +1,7 @@
 {
   "date": "2026-08-11",
-  "updatedAt": "2026-08-11T17:02:26.910Z",
+  "updatedAt": "2026-08-11T20:53:27.588Z",
   "matches": [
-    {
-      "id": "e2412627",
-      "status": "upcoming",
-      "minute": "",
-      "home": "Helsingborg",
-      "away": "Värnamo",
-      "homeAbbr": "H",
-      "awayAbbr": "V",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/xogmss1592144703.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/j1vlpe1639778697.png",
-      "score": "VS",
-      "time": "17:00",
-      "league": "Swedish Superettan",
-      "venue": "Olympia",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2413046",
       "status": "ended",
@@ -52,6 +34,24 @@
       "time": "00:15",
       "league": "Argentinian Primera Division",
       "venue": "Estadio 15 de Abril",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2412627",
+      "status": "ended",
+      "minute": "",
+      "home": "Helsingborg",
+      "away": "Värnamo",
+      "homeAbbr": "H",
+      "awayAbbr": "V",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/xogmss1592144703.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/j1vlpe1639778697.png",
+      "score": "1 - 2",
+      "time": "17:00",
+      "league": "Swedish Superettan",
+      "venue": "Olympia",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
