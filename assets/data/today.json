@@ -1,18 +1,18 @@
 {
   "date": "2026-08-12",
-  "updatedAt": "2026-08-12T17:01:46.202Z",
+  "updatedAt": "2026-08-12T20:52:48.818Z",
   "matches": [
     {
       "id": "e2421953",
-      "status": "upcoming",
-      "minute": "",
+      "status": "live",
+      "minute": "2H",
       "home": "Magallanes",
       "away": "Cobreloa",
       "homeAbbr": "M",
       "awayAbbr": "C",
       "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/ky0u9y1757129967.png",
       "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/y971we1756782437.png",
-      "score": "VS",
+      "score": "1 - 1",
       "time": "19:00",
       "league": "Chile Primera B",
       "venue": "Estadio Municipal Luis Navarro Avilés",
