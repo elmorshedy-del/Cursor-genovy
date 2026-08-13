@@ -1,25 +1,7 @@
 {
   "date": "2026-08-13",
-  "updatedAt": "2026-08-13T02:26:29.634Z",
+  "updatedAt": "2026-08-13T05:43:32.641Z",
   "matches": [
-    {
-      "id": "e2421949",
-      "status": "live",
-      "minute": "2H",
-      "home": "Deportes Antofagasta",
-      "away": "Santiago Wanderers",
-      "homeAbbr": "DA",
-      "awayAbbr": "SW",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/01yji51602188105.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/ablr721757220570.png",
-      "score": "0 - 0",
-      "time": "00:30",
-      "league": "Chile Primera B",
-      "venue": "Estadio Regional Calvo y Bascuñán",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2421955",
       "status": "upcoming",
@@ -52,6 +34,24 @@
       "time": "00:00",
       "league": "American USL League One",
       "venue": "Breese Stevens Field",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2421949",
+      "status": "ended",
+      "minute": "",
+      "home": "Deportes Antofagasta",
+      "away": "Santiago Wanderers",
+      "homeAbbr": "DA",
+      "awayAbbr": "SW",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/01yji51602188105.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/ablr721757220570.png",
+      "score": "0 - 0",
+      "time": "00:30",
+      "league": "Chile Primera B",
+      "venue": "Estadio Regional Calvo y Bascuñán",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
