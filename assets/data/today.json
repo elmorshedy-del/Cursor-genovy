@@ -1,25 +1,7 @@
 {
   "date": "2026-08-18",
-  "updatedAt": "2026-08-18T01:36:42.791Z",
+  "updatedAt": "2026-08-18T04:40:52.684Z",
   "matches": [
-    {
-      "id": "e2398017",
-      "status": "live",
-      "minute": "1H",
-      "home": "Gimnasia y Esgrima de Mendoza",
-      "away": "Talleres de Córdoba",
-      "homeAbbr": "GYE",
-      "awayAbbr": "TDC",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/h11mlf1677636958.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/7hum2t1769310938.png",
-      "score": "2 - 0",
-      "time": "00:30",
-      "league": "Argentinian Primera Division",
-      "venue": "Estadio Víctor Antonio Legrotaglie",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2408553",
       "status": "upcoming",
@@ -52,6 +34,24 @@
       "time": "18:00",
       "league": "Argentinian Primera C",
       "venue": "Estadio Ciudad de San Miguel",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2398017",
+      "status": "ended",
+      "minute": "",
+      "home": "Gimnasia y Esgrima de Mendoza",
+      "away": "Talleres de Córdoba",
+      "homeAbbr": "GYE",
+      "awayAbbr": "TDC",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/h11mlf1677636958.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/7hum2t1769310938.png",
+      "score": "3 - 1",
+      "time": "00:30",
+      "league": "Argentinian Primera Division",
+      "venue": "Estadio Víctor Antonio Legrotaglie",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
