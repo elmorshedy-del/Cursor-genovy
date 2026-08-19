@@ -1,18 +1,18 @@
 {
   "date": "2026-08-19",
-  "updatedAt": "2026-08-19T16:37:05.402Z",
+  "updatedAt": "2026-08-19T20:34:22.724Z",
   "matches": [
     {
       "id": "e2404924",
-      "status": "upcoming",
-      "minute": "",
+      "status": "live",
+      "minute": "2H",
       "home": "Chacarita Juniors",
       "away": "Güemes",
       "homeAbbr": "CJ",
       "awayAbbr": "G",
       "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/pjam301511624231.png",
       "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/pvd49s1615822794.png",
-      "score": "VS",
+      "score": "0 - 0",
       "time": "18:00",
       "league": "Argentinian Primera B Nacional",
       "venue": "Estadio de Chacarita Juniors",
