@@ -1,6 +1,6 @@
 {
   "date": "2026-08-24",
-  "updatedAt": "2026-08-24T13:01:03.487Z",
+  "updatedAt": "2026-08-24T16:44:29.405Z",
   "matches": [
     {
       "id": "e2398040",
@@ -21,19 +21,19 @@
       "commentator": null
     },
     {
-      "id": "e2398421",
+      "id": "e2397278",
       "status": "upcoming",
       "minute": "",
-      "home": "Botafogo",
-      "away": "Athletico Paranaense",
-      "homeAbbr": "B",
-      "awayAbbr": "AP",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/bs5mbw1733004596.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/irzu1u1554237406.png",
+      "home": "Charleston Battery",
+      "away": "Miami FC",
+      "homeAbbr": "CB",
+      "awayAbbr": "MF",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/uqx34i1690266678.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/ow77dj1595154153.png",
       "score": "VS",
       "time": "23:00",
-      "league": "Brazilian Serie A",
-      "venue": "Estádio Olímpico Nilton Santos",
+      "league": "American USL Championship",
+      "venue": "Patriots Point Soccer Complex",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
