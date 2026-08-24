@@ -1,25 +1,7 @@
 {
   "date": "2026-08-24",
-  "updatedAt": "2026-08-24T01:42:42.903Z",
+  "updatedAt": "2026-08-24T04:51:45.366Z",
   "matches": [
-    {
-      "id": "e2398036",
-      "status": "live",
-      "minute": "HT",
-      "home": "Racing Club",
-      "away": "Boca Juniors",
-      "homeAbbr": "RC",
-      "awayAbbr": "BJ",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/vi4mu41695734959.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/bm7krb1775741582.png",
-      "score": "1 - 1",
-      "time": "00:30",
-      "league": "Argentinian Primera Division",
-      "venue": "Estadio Presidente Perón",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2398040",
       "status": "upcoming",
@@ -52,6 +34,24 @@
       "time": "23:00",
       "league": "Brazilian Serie A",
       "venue": "Estádio Olímpico Nilton Santos",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2398036",
+      "status": "ended",
+      "minute": "",
+      "home": "Racing Club",
+      "away": "Boca Juniors",
+      "homeAbbr": "RC",
+      "awayAbbr": "BJ",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/vi4mu41695734959.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/bm7krb1775741582.png",
+      "score": "1 - 1",
+      "time": "00:30",
+      "league": "Argentinian Primera Division",
+      "venue": "Estadio Presidente Perón",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
