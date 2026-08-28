@@ -1,25 +1,7 @@
 {
   "date": "2026-08-28",
-  "updatedAt": "2026-08-28T10:53:19.242Z",
+  "updatedAt": "2026-08-28T22:04:19.239Z",
   "matches": [
-    {
-      "id": "e2398711",
-      "status": "upcoming",
-      "minute": "",
-      "home": "Bohemians",
-      "away": "Sligo Rovers",
-      "homeAbbr": "B",
-      "awayAbbr": "SR",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/78i24h1734625752.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/1e9wvc1602256331.png",
-      "score": "VS",
-      "time": "18:45",
-      "league": "Irish Premier Division",
-      "venue": "Dalymount Park",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2398055",
       "status": "upcoming",
@@ -52,6 +34,24 @@
       "time": "23:00",
       "league": "American USL League One",
       "venue": "",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2398711",
+      "status": "ended",
+      "minute": "",
+      "home": "Bohemians",
+      "away": "Sligo Rovers",
+      "homeAbbr": "B",
+      "awayAbbr": "SR",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/78i24h1734625752.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/1e9wvc1602256331.png",
+      "score": "3 - 0",
+      "time": "18:45",
+      "league": "Irish Premier Division",
+      "venue": "Dalymount Park",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
