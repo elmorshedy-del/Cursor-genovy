@@ -1,25 +1,7 @@
 {
   "date": "2026-09-03",
-  "updatedAt": "2026-09-03T16:12:25.262Z",
+  "updatedAt": "2026-09-03T22:27:25.343Z",
   "matches": [
-    {
-      "id": "e2398828",
-      "status": "upcoming",
-      "minute": "",
-      "home": "Mjällby",
-      "away": "Djurgården",
-      "homeAbbr": "M",
-      "awayAbbr": "D",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/ruwqxv1430239112.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/yuuwru1425411493.png",
-      "score": "VS",
-      "time": "17:00",
-      "league": "Swedish Allsvenskan",
-      "venue": "Strandvallen",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2397628",
       "status": "ended",
@@ -52,6 +34,24 @@
       "time": "00:30",
       "league": "Chile Primera Division",
       "venue": "Estadio Municipal Lucio Fariña Fernández",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2398828",
+      "status": "ended",
+      "minute": "",
+      "home": "Mjällby",
+      "away": "Djurgården",
+      "homeAbbr": "M",
+      "awayAbbr": "D",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/ruwqxv1430239112.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/yuuwru1425411493.png",
+      "score": "0 - 2",
+      "time": "17:00",
+      "league": "Swedish Allsvenskan",
+      "venue": "Strandvallen",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
