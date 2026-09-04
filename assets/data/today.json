@@ -1,18 +1,18 @@
 {
   "date": "2026-09-04",
-  "updatedAt": "2026-09-04T16:07:12.781Z",
+  "updatedAt": "2026-09-04T22:16:06.878Z",
   "matches": [
     {
       "id": "e2398060",
-      "status": "upcoming",
-      "minute": "",
+      "status": "live",
+      "minute": "2H",
       "home": "Estudiantes de Río Cuarto",
       "away": "Sarmiento",
       "homeAbbr": "EDR",
       "awayAbbr": "S",
       "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/391thp1775793121.png",
       "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/xxofu71677634191.png",
-      "score": "VS",
+      "score": "0 - 2",
       "time": "19:45",
       "league": "Argentinian Primera Division",
       "venue": "Estadio Antonio Candini",
