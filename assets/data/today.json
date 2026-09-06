@@ -1,25 +1,7 @@
 {
   "date": "2026-09-06",
-  "updatedAt": "2026-09-06T12:03:27.783Z",
+  "updatedAt": "2026-09-06T18:09:52.709Z",
   "matches": [
-    {
-      "id": "e2397309",
-      "status": "ended",
-      "minute": "",
-      "home": "Orange County SC",
-      "away": "Sacramento Republic",
-      "homeAbbr": "OCS",
-      "awayAbbr": "SR",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/0hu2pn1690265656.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/qlxpys1706283543.png",
-      "score": "1 - 1",
-      "time": "01:00",
-      "league": "American USL Championship",
-      "venue": "Championship Soccer Stadium",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2397308",
       "status": "ended",
@@ -52,6 +34,24 @@
       "time": "02:30",
       "league": "American USL Championship",
       "venue": "Cashman Field",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2397307",
+      "status": "ended",
+      "minute": "",
+      "home": "Miami FC",
+      "away": "Pittsburgh Riverhounds",
+      "homeAbbr": "MF",
+      "awayAbbr": "PR",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/ow77dj1595154153.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/93k33k1629387374.png",
+      "score": "2 - 2",
+      "time": "15:00",
+      "league": "American USL Championship",
+      "venue": "Pitbull Stadium",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
