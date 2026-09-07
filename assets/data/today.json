@@ -1,18 +1,18 @@
 {
   "date": "2026-09-07",
-  "updatedAt": "2026-09-07T19:46:27.813Z",
+  "updatedAt": "2026-09-07T22:41:47.854Z",
   "matches": [
     {
       "id": "e2398057",
-      "status": "upcoming",
-      "minute": "",
+      "status": "live",
+      "minute": "1H",
       "home": "Barracas Central",
       "away": "Argentinos Juniors",
       "homeAbbr": "BC",
       "awayAbbr": "AJ",
       "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/rbkjba1707458543.png",
       "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/uqfjuo1769234850.png",
-      "score": "VS",
+      "score": "0 - 1",
       "time": "22:00",
       "league": "Argentinian Primera Division",
       "venue": "Estadio Claudio Fabián Tapia",
