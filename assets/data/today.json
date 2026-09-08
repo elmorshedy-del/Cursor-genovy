@@ -1,25 +1,7 @@
 {
   "date": "2026-09-08",
-  "updatedAt": "2026-09-08T19:21:15.322Z",
+  "updatedAt": "2026-09-08T22:29:40.847Z",
   "matches": [
-    {
-      "id": "e2408595",
-      "status": "live",
-      "minute": "1H",
-      "home": "Claypole",
-      "away": "Central Ballester",
-      "homeAbbr": "C",
-      "awayAbbr": "CB",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/x3msry1775603524.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/06ylt11734118595.png",
-      "score": "0 - 0",
-      "time": "18:00",
-      "league": "Argentinian Primera C",
-      "venue": "Estadio Rodolfo Vicente Capocasa",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2398069",
       "status": "ended",
@@ -52,6 +34,24 @@
       "time": "10:30",
       "league": "South Korean K League 1",
       "venue": "Incheon Football Stadium",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2408595",
+      "status": "ended",
+      "minute": "",
+      "home": "Claypole",
+      "away": "Central Ballester",
+      "homeAbbr": "C",
+      "awayAbbr": "CB",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/x3msry1775603524.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/06ylt11734118595.png",
+      "score": "0 - 1",
+      "time": "18:00",
+      "league": "Argentinian Primera C",
+      "venue": "Estadio Rodolfo Vicente Capocasa",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
