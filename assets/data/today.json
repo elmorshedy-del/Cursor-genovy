@@ -1,18 +1,18 @@
 {
   "date": "2026-09-08",
-  "updatedAt": "2026-09-08T04:03:17.984Z",
+  "updatedAt": "2026-09-08T12:46:47.955Z",
   "matches": [
     {
       "id": "e2416543",
-      "status": "upcoming",
-      "minute": "",
+      "status": "live",
+      "minute": "2H",
       "home": "Incheon United",
       "away": "Bucheon FC 1995",
       "homeAbbr": "IU",
       "awayAbbr": "BF1",
       "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/2no9nq1579473100.png",
       "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/mhcuwe1589557777.png",
-      "score": "VS",
+      "score": "1 - 1",
       "time": "10:30",
       "league": "South Korean K League 1",
       "venue": "Incheon Football Stadium",
