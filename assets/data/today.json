@@ -1,25 +1,7 @@
 {
   "date": "2026-09-09",
-  "updatedAt": "2026-09-09T19:11:04.117Z",
+  "updatedAt": "2026-09-09T22:23:48.452Z",
   "matches": [
-    {
-      "id": "e2404928",
-      "status": "live",
-      "minute": "1H",
-      "home": "Defensores de Belgrano",
-      "away": "Los Andes",
-      "homeAbbr": "DDB",
-      "awayAbbr": "LA",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/8n9orj1578823535.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/yjfgav1626632717.png",
-      "score": "0 - 0",
-      "time": "18:30",
-      "league": "Argentinian Primera B Nacional",
-      "venue": "Estadio Juan Pasquale",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2407054",
       "status": "upcoming",
@@ -52,6 +34,24 @@
       "time": "23:45",
       "league": "American Major League Soccer",
       "venue": "Subaru Park",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2404928",
+      "status": "ended",
+      "minute": "",
+      "home": "Defensores de Belgrano",
+      "away": "Los Andes",
+      "homeAbbr": "DDB",
+      "awayAbbr": "LA",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/8n9orj1578823535.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/yjfgav1626632717.png",
+      "score": "1 - 1",
+      "time": "18:30",
+      "league": "Argentinian Primera B Nacional",
+      "venue": "Estadio Juan Pasquale",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
