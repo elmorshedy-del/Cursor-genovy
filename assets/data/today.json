@@ -1,25 +1,7 @@
 {
   "date": "2026-09-12",
-  "updatedAt": "2026-09-12T04:06:41.990Z",
+  "updatedAt": "2026-09-12T12:04:08.897Z",
   "matches": [
-    {
-      "id": "e2397314",
-      "status": "live",
-      "minute": "2H",
-      "home": "Colorado Springs Switchbacks",
-      "away": "San Antonio",
-      "homeAbbr": "CSS",
-      "awayAbbr": "SA",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/oql6wu1629304849.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/b4sbj21688514660.png",
-      "score": "0 - 0",
-      "time": "02:00",
-      "league": "American USL Championship",
-      "venue": "Weidner Field",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2397315",
       "status": "upcoming",
@@ -52,6 +34,24 @@
       "time": "23:00",
       "league": "American USL Championship",
       "venue": "Trinity Health Stadium",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2397314",
+      "status": "ended",
+      "minute": "",
+      "home": "Colorado Springs Switchbacks",
+      "away": "San Antonio",
+      "homeAbbr": "CSS",
+      "awayAbbr": "SA",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/oql6wu1629304849.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/b4sbj21688514660.png",
+      "score": "2 - 1",
+      "time": "02:00",
+      "league": "American USL Championship",
+      "venue": "Weidner Field",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
