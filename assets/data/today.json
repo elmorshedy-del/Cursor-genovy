@@ -1,25 +1,7 @@
 {
   "date": "2026-09-15",
-  "updatedAt": "2026-09-15T19:36:54.677Z",
+  "updatedAt": "2026-09-15T22:47:53.706Z",
   "matches": [
-    {
-      "id": "e2408609",
-      "status": "live",
-      "minute": "1H",
-      "home": "Claypole",
-      "away": "Sacachispas",
-      "homeAbbr": "C",
-      "awayAbbr": "S",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/x3msry1775603524.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/nx840e1652125601.png",
-      "score": "0 - 0",
-      "time": "18:00",
-      "league": "Argentinian Primera C",
-      "venue": "Estadio Rodolfo Vicente Capocasa",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2397180",
       "status": "upcoming",
@@ -52,6 +34,24 @@
       "time": "00:15",
       "league": "Argentinian Primera Division",
       "venue": "Estadio Juan Domingo Perón",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2408609",
+      "status": "ended",
+      "minute": "",
+      "home": "Claypole",
+      "away": "Sacachispas",
+      "homeAbbr": "C",
+      "awayAbbr": "S",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/x3msry1775603524.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/nx840e1652125601.png",
+      "score": "2 - 0",
+      "time": "18:00",
+      "league": "Argentinian Primera C",
+      "venue": "Estadio Rodolfo Vicente Capocasa",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
