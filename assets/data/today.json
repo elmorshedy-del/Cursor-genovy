@@ -1,25 +1,7 @@
 {
   "date": "2026-09-17",
-  "updatedAt": "2026-09-17T13:16:27.266Z",
+  "updatedAt": "2026-09-17T19:39:35.962Z",
   "matches": [
-    {
-      "id": "e2413318",
-      "status": "upcoming",
-      "minute": "",
-      "home": "Eskilsminne",
-      "away": "Tvååker",
-      "homeAbbr": "E",
-      "awayAbbr": "T",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/udoeww1727586910.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/eyknou1579902594.png",
-      "score": "VS",
-      "time": "17:00",
-      "league": "Swedish Division 1 South",
-      "venue": "Harlyckans IP",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2397223",
       "status": "ended",
@@ -52,6 +34,24 @@
       "time": "01:00",
       "league": "American USL League One",
       "venue": "",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2413318",
+      "status": "ended",
+      "minute": "",
+      "home": "Eskilsminne",
+      "away": "Tvååker",
+      "homeAbbr": "E",
+      "awayAbbr": "T",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/udoeww1727586910.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/eyknou1579902594.png",
+      "score": "4 - 2",
+      "time": "17:00",
+      "league": "Swedish Division 1 South",
+      "venue": "Harlyckans IP",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
