@@ -1,25 +1,7 @@
 {
   "date": "2026-09-20",
-  "updatedAt": "2026-09-20T04:27:09.082Z",
+  "updatedAt": "2026-09-20T12:58:26.523Z",
   "matches": [
-    {
-      "id": "e2397331",
-      "status": "live",
-      "minute": "2H",
-      "home": "Las Vegas Lights",
-      "away": "Hartford Athletic",
-      "homeAbbr": "LVL",
-      "awayAbbr": "HA",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/wr69xv1629387151.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/dhbu3l1690266780.png",
-      "score": "1 - 1",
-      "time": "02:30",
-      "league": "American USL Championship",
-      "venue": "Cashman Field",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2397329",
       "status": "ended",
@@ -52,6 +34,24 @@
       "time": "02:00",
       "league": "American USL Championship",
       "venue": "Casino Arizona Field",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2397331",
+      "status": "ended",
+      "minute": "",
+      "home": "Las Vegas Lights",
+      "away": "Hartford Athletic",
+      "homeAbbr": "LVL",
+      "awayAbbr": "HA",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/wr69xv1629387151.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/dhbu3l1690266780.png",
+      "score": "1 - 1",
+      "time": "02:30",
+      "league": "American USL Championship",
+      "venue": "Cashman Field",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
