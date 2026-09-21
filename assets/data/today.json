@@ -1,25 +1,7 @@
 {
   "date": "2026-09-21",
-  "updatedAt": "2026-09-21T14:59:50.801Z",
+  "updatedAt": "2026-09-21T20:21:09.607Z",
   "matches": [
-    {
-      "id": "e2398086",
-      "status": "upcoming",
-      "minute": "",
-      "home": "Aldosivi",
-      "away": "Atlético Tucumán",
-      "homeAbbr": "A",
-      "awayAbbr": "AT",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/nqrjqb1517767667.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/m5i2q21775755577.png",
-      "score": "VS",
-      "time": "17:30",
-      "league": "Argentinian Primera Division",
-      "venue": "Estadio José María Minella",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2398087",
       "status": "upcoming",
@@ -52,6 +34,24 @@
       "time": "00:30",
       "league": "Argentinian Primera Division",
       "venue": "Estadio José Amalfitani",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2398086",
+      "status": "ended",
+      "minute": "",
+      "home": "Aldosivi",
+      "away": "Atlético Tucumán",
+      "homeAbbr": "A",
+      "awayAbbr": "AT",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/nqrjqb1517767667.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/m5i2q21775755577.png",
+      "score": "1 - 0",
+      "time": "17:30",
+      "league": "Argentinian Primera Division",
+      "venue": "Estadio José María Minella",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
