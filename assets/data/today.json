@@ -1,18 +1,18 @@
 {
   "date": "2026-09-22",
-  "updatedAt": "2026-09-22T19:39:43.595Z",
+  "updatedAt": "2026-09-22T22:50:18.853Z",
   "matches": [
     {
       "id": "e2431448",
-      "status": "upcoming",
-      "minute": "",
+      "status": "live",
+      "minute": "1H",
       "home": "Criciúma",
       "away": "Operário Ferroviário",
       "homeAbbr": "C",
       "awayAbbr": "OF",
       "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/r11mld1766506200.png",
       "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/fhrc6i1560791704.png",
-      "score": "VS",
+      "score": "0 - 0",
       "time": "22:30",
       "league": "Brazilian Serie B",
       "venue": "Estádio Heriberto Hülse",
