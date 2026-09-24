@@ -1,25 +1,7 @@
 {
   "date": "2026-09-24",
-  "updatedAt": "2026-09-24T04:13:46.699Z",
+  "updatedAt": "2026-09-24T13:26:28.983Z",
   "matches": [
-    {
-      "id": "e2406811",
-      "status": "live",
-      "minute": "2H",
-      "home": "Seattle Sounders",
-      "away": "Real Salt Lake",
-      "homeAbbr": "SS",
-      "awayAbbr": "RSL",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/2dy5cx1706711036.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/kkjlfa1556488022.png",
-      "score": "2 - 0",
-      "time": "01:30",
-      "league": "American Major League Soccer",
-      "venue": "Lumen Field",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2269515",
       "status": "upcoming",
@@ -52,6 +34,24 @@
       "time": "18:30",
       "league": "UEFA European Under-21 Championship",
       "venue": "",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2406811",
+      "status": "ended",
+      "minute": "",
+      "home": "Seattle Sounders",
+      "away": "Real Salt Lake",
+      "homeAbbr": "SS",
+      "awayAbbr": "RSL",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/2dy5cx1706711036.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/kkjlfa1556488022.png",
+      "score": "2 - 0",
+      "time": "01:30",
+      "league": "American Major League Soccer",
+      "venue": "Lumen Field",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
