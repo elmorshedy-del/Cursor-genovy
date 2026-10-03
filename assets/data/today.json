@@ -1,25 +1,7 @@
 {
   "date": "2026-10-03",
-  "updatedAt": "2026-10-03T19:07:18.299Z",
+  "updatedAt": "2026-10-03T22:46:55.068Z",
   "matches": [
-    {
-      "id": "e2269356",
-      "status": "live",
-      "minute": "2H",
-      "home": "France U21",
-      "away": "Luxembourg U21",
-      "homeAbbr": "FU",
-      "awayAbbr": "LU",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/iz2imn1788198926.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/81lyzb1713725402.png",
-      "score": "2 - 2",
-      "time": "17:00",
-      "league": "UEFA European Under-21 Championship",
-      "venue": "Stade de France",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2397357",
       "status": "upcoming",
@@ -52,6 +34,24 @@
       "time": "23:00",
       "league": "American USL Championship",
       "venue": "Keyworth Stadium",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2269356",
+      "status": "ended",
+      "minute": "",
+      "home": "France U21",
+      "away": "Luxembourg U21",
+      "homeAbbr": "FU",
+      "awayAbbr": "LU",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/iz2imn1788198926.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/81lyzb1713725402.png",
+      "score": "3 - 2",
+      "time": "17:00",
+      "league": "UEFA European Under-21 Championship",
+      "venue": "Stade de France",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
