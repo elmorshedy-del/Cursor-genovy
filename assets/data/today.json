@@ -1,25 +1,7 @@
 {
   "date": "2026-10-09",
-  "updatedAt": "2026-10-09T15:09:38.136Z",
+  "updatedAt": "2026-10-09T20:42:53.626Z",
   "matches": [
-    {
-      "id": "e2398116",
-      "status": "upcoming",
-      "minute": "",
-      "home": "Aldosivi",
-      "away": "Sarmiento",
-      "homeAbbr": "A",
-      "awayAbbr": "S",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/nqrjqb1517767667.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/xxofu71677634191.png",
-      "score": "VS",
-      "time": "17:30",
-      "league": "Argentinian Primera Division",
-      "venue": "Estadio José María Minella",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2398119",
       "status": "upcoming",
@@ -52,6 +34,24 @@
       "time": "23:30",
       "league": "American USL Championship",
       "venue": "Lexington SC Stadium",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2398116",
+      "status": "ended",
+      "minute": "",
+      "home": "Aldosivi",
+      "away": "Sarmiento",
+      "homeAbbr": "A",
+      "awayAbbr": "S",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/nqrjqb1517767667.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/xxofu71677634191.png",
+      "score": "1 - 3",
+      "time": "17:30",
+      "league": "Argentinian Primera Division",
+      "venue": "Estadio José María Minella",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
