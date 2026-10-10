@@ -1,18 +1,18 @@
 {
   "date": "2026-10-10",
-  "updatedAt": "2026-10-10T19:55:37.368Z",
+  "updatedAt": "2026-10-10T23:23:29.653Z",
   "matches": [
     {
       "id": "e2397370",
-      "status": "upcoming",
-      "minute": "",
+      "status": "live",
+      "minute": "1H",
       "home": "Charleston Battery",
       "away": "Louisville City",
       "homeAbbr": "CB",
       "awayAbbr": "LC",
       "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/uqx34i1690266678.png",
       "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/v0wen91771603471.png",
-      "score": "VS",
+      "score": "0 - 0",
       "time": "22:00",
       "league": "American USL Championship",
       "venue": "Patriots Point Soccer Complex",
