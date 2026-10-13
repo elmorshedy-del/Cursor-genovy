@@ -1,25 +1,7 @@
 {
   "date": "2026-10-13",
-  "updatedAt": "2026-10-13T01:55:31.751Z",
+  "updatedAt": "2026-10-13T11:35:58.371Z",
   "matches": [
-    {
-      "id": "e2398483",
-      "status": "live",
-      "minute": "HT",
-      "home": "Bragantino",
-      "away": "Cruzeiro",
-      "homeAbbr": "B",
-      "awayAbbr": "C",
-      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/2p7tl41701423595.png",
-      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/upsvvu1473538059.png",
-      "score": "3 - 1",
-      "time": "00:00",
-      "league": "Brazilian Serie A",
-      "venue": "Estadio Cicero de Souza Marques",
-      "channel": null,
-      "channelId": "bein-sports-1",
-      "commentator": null
-    },
     {
       "id": "e2423831",
       "status": "upcoming",
@@ -52,6 +34,24 @@
       "time": "17:00",
       "league": "Swedish Superettan",
       "venue": "Östgötaporten",
+      "channel": null,
+      "channelId": "bein-sports-1",
+      "commentator": null
+    },
+    {
+      "id": "e2398483",
+      "status": "ended",
+      "minute": "",
+      "home": "Bragantino",
+      "away": "Cruzeiro",
+      "homeAbbr": "B",
+      "awayAbbr": "C",
+      "homeBadge": "https://r2.thesportsdb.com/images/media/team/badge/2p7tl41701423595.png",
+      "awayBadge": "https://r2.thesportsdb.com/images/media/team/badge/upsvvu1473538059.png",
+      "score": "4 - 2",
+      "time": "00:00",
+      "league": "Brazilian Serie A",
+      "venue": "Estadio Cicero de Souza Marques",
       "channel": null,
       "channelId": "bein-sports-1",
       "commentator": null
